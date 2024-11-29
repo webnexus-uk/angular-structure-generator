@@ -4,7 +4,7 @@ const path = require("path");
 const { generateAngularStructure } = require("./generators/angular-structure");
 const { generateShared } = require("./generators/shared-resources");
 const { updateRouting } = require("./generators/routing");
-const { parseJSON } = require("./utils/json-utils");
+const { parseJSON, validateJSONStructure } = require("./utils/json-utils");
 
 const jsonFile = process.argv[2];
 if (!jsonFile) {
@@ -14,6 +14,8 @@ if (!jsonFile) {
 
 try {
   const jsonData = parseJSON(fs.readFileSync(path.resolve(jsonFile), "utf8"));
+  // Validate JSON structure
+  validateJSONStructure(jsonData);
 
   // Generate Angular structure
   generateAngularStructure(jsonData.structure);
