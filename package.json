@@ -1,6 +1,6 @@
 {
   "name": "@codingnexus/angular-structure-generator",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A tool to generate Angular modules, components, services, and routing from a JSON structure.",
   "main": "src/cli.js",
   "directories": {},
