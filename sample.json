@@ -1,0 +1,29 @@
+{
+  "structure": [
+    {
+      "name": "Home",
+      "location": ""
+    },
+    {
+      "name": "About",
+      "location": "about"
+    },
+    {
+      "name": "Products",
+      "location": "products",
+      "children": [
+        {
+          "name": "Product",
+          "location": ":id",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "shared": {
+    "services": ["api", "auth"],
+    "components": ["menu", "footer"],
+    "interfaces": ["user", "product"],
+    "pipes": ["capitalize", "time", "date"]
+  }
+}

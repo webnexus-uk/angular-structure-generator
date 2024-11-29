@@ -1,0 +1,27 @@
+{
+  "name": "@codingnexus/angular-structure-generator",
+  "version": "1.1.8",
+  "description": "A tool to generate Angular modules, components, services, and routing from a JSON structure.",
+  "main": "index.js",
+  "directories": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tony Hensler (Coding Nexus)",
+  "license": "ISC",
+  "bin": {
+    "angular-structure-generator": "index.js"
+  },
+  "devDependencies": {
+    "@angular/cli": "^19.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:webnexus-uk/angular-structure-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webnexus-uk/angular-structure-generator/issues"
+  },
+  "homepage": "https://github.com/webnexus-uk/angular-structure-generator#readme"
+}
